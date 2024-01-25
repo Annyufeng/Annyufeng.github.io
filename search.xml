@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>斯皮尔曼相关系数和皮尔逊相关系数的区别</title>
+      <link href="/2024/01/25/%E6%96%AF%E7%9A%AE%E5%B0%94%E6%9B%BC%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E5%92%8C%E7%9A%AE%E5%B0%94%E9%80%8A%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+      <url>/2024/01/25/%E6%96%AF%E7%9A%AE%E5%B0%94%E6%9B%BC%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E5%92%8C%E7%9A%AE%E5%B0%94%E9%80%8A%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<ol><li><strong>连续数据、正态分布、线性关系</strong>，用皮尔逊系数是最恰当的，斯皮尔曼也可以只是效率比较低的问题。</li><li>上述任一条件<strong>不满足</strong>，就使用斯皮尔曼相关系数，不能使用皮尔逊相关系数。</li><li>两个<strong>定序数据</strong>之间使用斯皮尔曼相关系数</li></ol><p>定序数据是指仅仅反映观测对象等级、顺序关系的数据，是由定序尺度计量形成的，表现为类别，可以进行排序，属于品质数据。优、良、差，我们可以用1表示差，2表示良、3表示优，但是，用2&#x2F;1&#x3D;2得出的2不具有任何含义。定序数据最重要的意义是代表了一组数据中的某种逻辑顺序。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/27/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E4%B9%8B%20Attention&amp;Transformer/"/>
+      <url>/2023/10/27/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E4%B9%8B%20Attention&amp;Transformer/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/10/23/%E7%8C%AB%E7%8B%97%E5%A4%A7%E6%88%98%20%E4%BA%8C%E5%88%86%E7%B1%BB%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2023/10/23/%E7%8C%AB%E7%8B%97%E5%A4%A7%E6%88%98%20%E4%BA%8C%E5%88%86%E7%B1%BB%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Part-One——Code-Train《猫狗大战》"><a href="#Part-One——Code-Train《猫狗大战》" class="headerlink" title="Part One——Code Train《猫狗大战》"></a>Part One——Code Train《猫狗大战》</h3><h5 id="Enviroment"><a href="#Enviroment" class="headerlink" title="Enviroment"></a>Enviroment</h5><p>vscode:1.83.0</p><p>python 3.11.3</p><p>pytorch 2.0.1</p><h4 id="1-导入库-pytorch等"><a href="#1-导入库-pytorch等" class="headerlink" title="1.导入库 pytorch等"></a>1.导入库 pytorch等</h4><p>#本次内容是使用LeNet实现猫狗图片的二分类</p><p># 源数据(<a href="https://www.kaggle.com/datasets/tongpython/cat-and-dog/data">https://www.kaggle.com/datasets/tongpython/cat-and-dog/data</a>)</p><p>#这里已经下载到本地</p><p><img src="https://pic.imgdb.cn/item/653688f6c458853aef3a6547.png"></p><p><img src="https://pic.imgdb.cn/item/653688f6c458853aef3a65ee.png"></p><p>MyDataLoader</p><p>用os中库读取本地文件 并根据图片的名字进行处理 分类 </p><p>使用DataLoader 将train分为200个batch 并打乱</p><p><img src="C:\Users\Ann\AppData\Roaming\Typora\typora-user-images\image-20231022232232438.png" alt="image-20231022232232438"></p><p><img src="https://pic.imgdb.cn/item/653688f6c458853aef3a6651.png"></p><p><img src="https://pic.imgdb.cn/item/653688f6c458853aef3a66cb.png"></p><p>创建网络</p><p>super是为了继承父类的init所使用的，</p><p>借鉴作业四中的leNet代码 在此基础上增加一个卷积层和池化操作，最后output是个2维向量，并且修改最后的ReLU为Sigmoid更适合二分类模型</p><p>损失函数和优化器分别为交叉熵和Adam 学习率为0.001</p><p><img src="C:\Users\Ann\AppData\Roaming\Typora\typora-user-images\image-20231022232253709.png" alt="image-20231022232253709"></p><p>训练过程</p><p><img src="https://pic.imgdb.cn/item/653688f6c458853aef3a678d.png"></p><p>最后Epoch：9 Acc：0.9925</p><p>验证集有0.8070的精准度</p><p><img src="https://pic.imgdb.cn/item/65368958c458853aef3be536.png"></p><p>最后再测试集上加载模型</p><p><img src="https://pic.imgdb.cn/item/65368958c458853aef3be598.png"></p><p>提交在AI研习社</p><p><img src="https://pic.imgdb.cn/item/65368958c458853aef3be5c8.png"></p><h3 id="resNet"><a href="#resNet" class="headerlink" title="resNet"></a>resNet</h3><p>接着使用resNet重新新训练</p><p><img src="https://pic.imgdb.cn/item/65368958c458853aef3be608.png"></p><p>用现成的resnet34</p><p>需要设置一下function 为 全连接层 </p><p>损失函数和优化器相同</p><p><img src="https://pic.imgdb.cn/item/65368958c458853aef3be697.png"></p><p>跑了50m 最后Acc0.9917</p><p><img src="https://pic.imgdb.cn/item/6536899dc458853aef3ce8f3.png"></p><p>在验证集上达到了 0.9525的精确度</p><p><img src="https://pic.imgdb.cn/item/6536899dc458853aef3ce942.png"></p><p>最后把test的分类结果写道csv中，提交</p><p><img src="https://pic.imgdb.cn/item/6536899dc458853aef3ce957.png"></p><p>最后得分95.95也是比leNet高了不少</p><h2 id="Part-Two——Q-A"><a href="#Part-Two——Q-A" class="headerlink" title="Part Two——Q&amp;A"></a>Part Two——Q&amp;A</h2><ol><li><p>Q：Residual learning 的基本原理？</p><p>A：Residual 是残差 resNet是残差网络  一般的神经网络的每一层分别对应于提取不同层次的特征信息，有低层，中层和高层，而网络越深的时候，提取到的不同层次的信息会越多，而不同层次间的层次信息的组合也会越多。深度学习对于网络深度遇到的主要问题是梯度消失和梯度爆炸，传统对应的解决方案则是数据的初始化(normlized initializatiton)和（batch normlization）正则化</p><p>​resNet需要构建残差元  它很容易训练，是前向和反向都可以保证，线性使得网络加深，可以达到1000层精度提升可以被移植到其他问题。 对于残差元的主要设计有两个，快捷连接和恒等映射，快捷连接使得残差变得可能，而恒等映射使得网络变深，而恒等映射主要有两个：快捷连接为恒等映射和相加后的激活函数去构造映射H(x)，与构造残差映射F(x）是等价的，此外残差映射也更容易优化。</p><p><img src="https://pic.imgdb.cn/item/6536899dc458853aef3ce9bd.png"></p></li><li><p>Q：Batch Normailization 的原理，思考 BN、LN、IN 的主要区别。</p><p>A：BN对N、H、W做归一化，而保留通道 C 的维度。BN对较小的batch size效果不好。BN适用于固定深度的前向神经网络，如CNN，不适用于RNN；</p><p><img src="https://pic.imgdb.cn/item/6536899ec458853aef3cea3a.png"></p><p><strong>是对不同样本里面的同一个特征通道进行归一化处理，逐特征维度归一化</strong></p><p>LN在通道方向上，对C、H、W归一化，主要对RNN效果明显；</p><p>IN在图像像素上，对H、W做归一化，用在风格化迁移；</p></li><li><p>Q：为什么分组卷积可以提升准确率？即然分组卷积可以提升准确率，同时还能降低计算量，分数数量尽量多不行吗？</p><p>A：分组卷积能减少运算量和参数量，所以不容易过拟合，相同输入输出大小的情况下，减少为原来的分组数分之一<br>分组数量并不是越多越好，当分组数目与输入图像channel相同，达到最大分组数，此时使用分组卷积会降低各个通道间的关联性，从而使得准确率降低。</p></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Machine Learning HW1</title>
+      <link href="/2023/10/18/Machine-Learning-HW1/"/>
+      <url>/2023/10/18/Machine-Learning-HW1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h2><h4 id="python库学习"><a href="#python库学习" class="headerlink" title="python库学习"></a>python库学习</h4><p>pandas：用于数据挖掘的python库 有以下特点：</p><ul><li>便捷的数据处理能力</li><li>独特的数据结构</li><li>读取文件方便</li><li>封装了matplotlib的画图和numpy的计算</li></ul><p>数据结构series 和 dataframe</p><p>os：提供通用的，基本的操作系统交互功能，包含路径操作 进程管理 环境参数等</p><p>csv：操作表格数据的库</p><p>tqdm：进度条库</p><p>torchviz：网络可视化库</p><p><a href="https://imgse.com/i/piPL6eO"><img src="https://z1.ax1x.com/2023/10/18/piPL6eO.png" alt="piPL6eO.png"></a></p><h4 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h4><p>使用随机seed 将数据集分为训练集和测试集</p><p><a href="https://imgse.com/i/piPLsOK"><img src="https://z1.ax1x.com/2023/10/18/piPLsOK.png" alt="piPLsOK.png"></a></p><p>nn.linear:就是进行了线性的变化 从input_dim,16 从输入维度降到16-&gt;8-&gt;1</p><p>nn.ReLU是一个激活函数，允许非线性的变化</p><p>squeeze()：降维</p><p><a href="https://imgse.com/i/piPLDQx"><img src="https://z1.ax1x.com/2023/10/18/piPLDQx.png" alt="piPLDQx.png"></a></p><p>选择特征</p><p>选择器，SGD,随机梯度下降算法，将损失函数最小化</p><p><img src="https://z1.ax1x.com/2023/10/18/piPLNo4.png"></p><p>训练3000个epoch，每一次迭代都使用SGD是损失函数最小，拟合效果更好，回归出来的也就越接近真实</p><p><img src="https://z1.ax1x.com/2023/10/18/piPqU2t.png" alt="1"></p><p>最后输出pred.csv，相当于把117个features 聚合为一个值</p><p><a href="https://imgse.com/i/piPLdY9"><img src="https://z1.ax1x.com/2023/10/18/piPLdY9.png" alt="piPLdY9.png"></a></p><p>最后预测出第五天的阳性病例数</p><h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>tensorboard不能使用：目前还没解决</p><p>网络构建的原理关于反向传播还没搞懂。</p><h4 id="10-20更新——反向传播（Back-Propagation）"><a href="#10-20更新——反向传播（Back-Propagation）" class="headerlink" title="10.20更新——反向传播（Back Propagation）"></a>10.20更新——反向传播（Back Propagation）</h4><p>正常的神经网络在进行前向传播时，分别进行线性变化和非线性的激活函数，最后的到Out，反向传播就是用Out和真实值做比对，利用误差MSE均方差反过来去修改各个线上面的权重让误差逐渐减小从输出层的前一层到输入层，</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Welcome To My Homepage——Who am I.</title>
+      <link href="/2023/09/24/hello-world/"/>
+      <url>/2023/09/24/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p> ¡Hola! 我是Annyufeng, 大家一般叫我蛋哥。这是我的第一篇博客，下面是我的个人介绍：</p><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Detail-Skill"><a href="#Detail-Skill" class="headerlink" title="Detail&amp;Skill"></a>Detail&amp;Skill</h3><p>我来自山西，在OUC当一名working hard的大三计算机学生，目前情绪稳定，前途渺茫。</p><p>目前学习过C,C++,C#,java,python,javascript,liquid，算法达到入门基础，有web(React框架)和小程序的前端开发经验。在IT工作室担任游戏部副部长，会使用unity引擎进行2D游戏的开发。</p><h3 id="Hobby"><a href="#Hobby" class="headerlink" title="Hobby"></a>Hobby</h3><p>游戏，动漫，骑车，跑步，乒乓球、健身，旅游，摄影，唱歌。总之是都沾点，比较喜欢尝试新鲜的东西。</p><h3 id="Achievement"><a href="#Achievement" class="headerlink" title="Achievement"></a>Achievement</h3><ul><li>2023年全国大学生数学建模比赛国家二等奖</li><li>2023年mathorcup数学建模比赛国家一等奖</li><li>2023年美国大学生数学建模比赛国家二等奖</li><li>2022年全国大学生数学建模比赛山东省二等奖</li><li>2023年亚太杯数学建模比赛S奖</li><li>CCF认证 200分</li><li>以第一责任人组织参与SRDP创新项目一项</li><li>合作完成独立游戏《大地之歌》</li><li>获得学校综合二，三等奖学金，“优秀学生”荣誉称号</li></ul><h3 id="Present-Work"><a href="#Present-Work" class="headerlink" title="Present Work"></a>Present Work</h3><p>Deep learning，Data augmentation，MCM</p><p>（learning）</p><h3 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h3><p>通过竞赛加分拿到推免资格 or 创新人才为校争光</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
