@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>cuda安装</title>
+      <link href="/2024/05/29/cuda%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
+      <url>/2024/05/29/cuda%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>在安装CUDA时需要注意两个问题：</p><ol><li><p>一定要确认CUDA和cudnn的版本是匹配的</p></li><li><p>安装时要勾掉VS和VSE 一些低版本可能只需要一个 大部分教程也是一个，但是VS有时就是会报错</p></li></ol><p><a href="https://blog.csdn.net/m0_45447650/article/details/123704930?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171696806816800226591062%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=171696806816800226591062&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-123704930-null-null.142%5Ev100%5Epc_search_result_base6&utm_term=cuda&spm=1018.2226.3001.4187">https://blog.csdn.net/m0_45447650/article/details/123704930?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171696806816800226591062%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=171696806816800226591062&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-123704930-null-null.142^v100^pc_search_result_base6&amp;utm_term=cuda&amp;spm=1018.2226.3001.4187</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>斯皮尔曼相关系数和皮尔逊相关系数的区别</title>
       <link href="/2024/01/25/%E6%96%AF%E7%9A%AE%E5%B0%94%E6%9B%BC%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E5%92%8C%E7%9A%AE%E5%B0%94%E9%80%8A%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
       <url>/2024/01/25/%E6%96%AF%E7%9A%AE%E5%B0%94%E6%9B%BC%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E5%92%8C%E7%9A%AE%E5%B0%94%E9%80%8A%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
@@ -17,7 +30,7 @@
     
     
     <entry>
-      <title></title>
+      <title>猫狗大战</title>
       <link href="/2023/10/23/%E7%8C%AB%E7%8B%97%E5%A4%A7%E6%88%98%20%E4%BA%8C%E5%88%86%E7%B1%BB%E5%AD%A6%E4%B9%A0/"/>
       <url>/2023/10/23/%E7%8C%AB%E7%8B%97%E5%A4%A7%E6%88%98%20%E4%BA%8C%E5%88%86%E7%B1%BB%E5%AD%A6%E4%B9%A0/</url>
       
@@ -34,9 +47,15 @@
       <link href="/2023/10/18/Machine-Learning-HW1/"/>
       <url>/2023/10/18/Machine-Learning-HW1/</url>
       
-        <content type="html"><![CDATA[<h2 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h2><h4 id="python库学习"><a href="#python库学习" class="headerlink" title="python库学习"></a>python库学习</h4><p>pandas：用于数据挖掘的python库 有以下特点：</p><ul><li>便捷的数据处理能力</li><li>独特的数据结构</li><li>读取文件方便</li><li>封装了matplotlib的画图和numpy的计算</li></ul><p>数据结构series 和 dataframe</p><p>os：提供通用的，基本的操作系统交互功能，包含路径操作 进程管理 环境参数等</p><p>csv：操作表格数据的库</p><p>tqdm：进度条库</p><p>torchviz：网络可视化库</p><p><a href="https://imgse.com/i/piPL6eO"><img src="https://z1.ax1x.com/2023/10/18/piPL6eO.png" alt="piPL6eO.png"></a></p><h4 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h4><p>使用随机seed 将数据集分为训练集和测试集</p><p><a href="https://imgse.com/i/piPLsOK"><img src="https://z1.ax1x.com/2023/10/18/piPLsOK.png" alt="piPLsOK.png"></a></p><p>nn.linear:就是进行了线性的变化 从input_dim,16 从输入维度降到16-&gt;8-&gt;1</p><p>nn.ReLU是一个激活函数，允许非线性的变化</p><p>squeeze()：降维</p><p><a href="https://imgse.com/i/piPLDQx"><img src="https://z1.ax1x.com/2023/10/18/piPLDQx.png" alt="piPLDQx.png"></a></p><p>选择特征</p><p>选择器，SGD,随机梯度下降算法，将损失函数最小化</p><p><img src="https://z1.ax1x.com/2023/10/18/piPLNo4.png"></p><p>训练3000个epoch，每一次迭代都使用SGD是损失函数最小，拟合效果更好，回归出来的也就越接近真实</p><p><img src="https://z1.ax1x.com/2023/10/18/piPqU2t.png" alt="1"></p><p>最后输出pred.csv，相当于把117个features 聚合为一个值</p><p><a href="https://imgse.com/i/piPLdY9"><img src="https://z1.ax1x.com/2023/10/18/piPLdY9.png" alt="piPLdY9.png"></a></p><p>最后预测出第五天的阳性病例数</p><h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>tensorboard不能使用：目前还没解决</p><p>网络构建的原理关于反向传播还没搞懂。</p><h4 id="10-20更新——反向传播（Back-Propagation）"><a href="#10-20更新——反向传播（Back-Propagation）" class="headerlink" title="10.20更新——反向传播（Back Propagation）"></a>10.20更新——反向传播（Back Propagation）</h4><p>正常的神经网络在进行前向传播时，分别进行线性变化和非线性的激活函数，最后的到Out，反向传播就是用Out和真实值做比对，利用误差MSE均方差反过来去修改各个线上面的权重让误差逐渐减小从输出层的前一层到输入层，</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h2><h4 id="python库学习"><a href="#python库学习" class="headerlink" title="python库学习"></a>python库学习</h4><p>pandas：用于数据挖掘的python库 有以下特点：</p><ul><li>便捷的数据处理能力</li><li>独特的数据结构</li><li>读取文件方便</li><li>封装了matplotlib的画图和numpy的计算</li></ul><p>数据结构series 和 dataframe</p><p>os：提供通用的，基本的操作系统交互功能，包含路径操作 进程管理 环境参数等</p><p>csv：操作表格数据的库</p><p>tqdm：进度条库</p><p>torchviz：网络可视化库</p><p><a href="https://imgse.com/i/piPL6eO"><img src="https://z1.ax1x.com/2023/10/18/piPL6eO.png" alt="piPL6eO.png"></a></p><h4 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h4><p>使用随机seed 将数据集分为训练集和测试集</p><p><a href="https://imgse.com/i/piPLsOK"><img src="https://z1.ax1x.com/2023/10/18/piPLsOK.png" alt="piPLsOK.png"></a></p><p>nn.linear:就是进行了线性的变化 从input_dim,16 从输入维度降到16-&gt;8-&gt;1</p><p>nn.ReLU是一个激活函数，允许非线性的变化</p><p>squeeze()：降维，例如：一个3×2×1×2×1的tensor，squeeze()之后便成了3×2×2。存储的<code>数据并没有发生变化</code>，但是去除了“多余”的维度信息。</p><p>可以理解成将三维空间的一条二维的线转移到二维空间</p><p>请注意，<code>不管是squeeze还是unsqueeze操作，都不会影响原先的张量维度</code>，需要将压缩和解压缩操作赋值给了原张量。</p><p><a href="https://imgse.com/i/piPLDQx"><img src="https://z1.ax1x.com/2023/10/18/piPLDQx.png" alt="piPLDQx.png"></a></p><p>选择特征</p><p>选择器，SGD,随机梯度下降算法，将损失函数最小化</p><p><img src="https://z1.ax1x.com/2023/10/18/piPLNo4.png"></p><p>训练3000个epoch，每一次迭代都使用SGD是损失函数最小，拟合效果更好，回归出来的也就越接近真实</p><p><img src="https://z1.ax1x.com/2023/10/18/piPqU2t.png" alt="1"></p><p>最后输出pred.csv，相当于把117个features 聚合为一个值</p><p><a href="https://imgse.com/i/piPLdY9"><img src="https://z1.ax1x.com/2023/10/18/piPLdY9.png" alt="piPLdY9.png"></a></p><p>最后预测出第五天的阳性病例数</p><h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>tensorboard不能使用：目前还没解决</p><p>网络构建的原理关于反向传播还没搞懂。</p><h4 id="10-20更新——反向传播（Back-Propagation）"><a href="#10-20更新——反向传播（Back-Propagation）" class="headerlink" title="10.20更新——反向传播（Back Propagation）"></a>10.20更新——反向传播（Back Propagation）</h4><p>正常的神经网络在进行前向传播时，分别进行线性变化和非线性的激活函数，最后的到Out，反向传播就是用Out和真实值做比对，利用误差MSE均方差反过来去修改各个线上面的权重让误差逐渐减小从输出层的前一层到输入层，</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Deep Learning </tag>
+            
+        </tags>
       
     </entry>
     
@@ -47,7 +66,7 @@
       <link href="/2023/09/24/hello-world/"/>
       <url>/2023/09/24/hello-world/</url>
       
-        <content type="html"><![CDATA[<p> ¡Hola! 我是Annyufeng, 大家一般叫我蛋哥。这是我的第一篇博客，下面是我的个人介绍：</p><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Detail-Skill"><a href="#Detail-Skill" class="headerlink" title="Detail&amp;Skill"></a>Detail&amp;Skill</h3><p>我来自山西，在OUC当一名working hard的大三计算机学生，目前情绪稳定，前途渺茫。</p><p>目前学习过C,C++,C#,java,python,javascript,liquid，算法达到入门基础，有web(React框架)和小程序的前端开发经验。在IT工作室担任游戏部副部长，会使用unity引擎进行2D游戏的开发。</p><h3 id="Hobby"><a href="#Hobby" class="headerlink" title="Hobby"></a>Hobby</h3><p>游戏，动漫，骑车，跑步，乒乓球、健身，旅游，摄影，唱歌。总之是都沾点，比较喜欢尝试新鲜的东西。</p><h3 id="Achievement"><a href="#Achievement" class="headerlink" title="Achievement"></a>Achievement</h3><ul><li>2023年全国大学生数学建模比赛国家二等奖</li><li>2023年mathorcup数学建模比赛国家一等奖</li><li>2023年美国大学生数学建模比赛国家二等奖</li><li>2022年全国大学生数学建模比赛山东省二等奖</li><li>2023年亚太杯数学建模比赛S奖</li><li>CCF认证 200分</li><li>以第一责任人组织参与SRDP创新项目一项</li><li>合作完成独立游戏《大地之歌》</li><li>获得学校综合二，三等奖学金，“优秀学生”荣誉称号</li></ul><h3 id="Present-Work"><a href="#Present-Work" class="headerlink" title="Present Work"></a>Present Work</h3><p>Deep learning，Data augmentation，MCM</p><p>（learning）</p><h3 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h3><p>通过竞赛加分拿到推免资格 or 创新人才为校争光</p>]]></content>
+        <content type="html"><![CDATA[<p> ¡Hola! 我是Annyufeng, 大家一般叫我蛋哥。这是我的第一篇博客，下面是我的个人介绍：</p><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Detail-Skill"><a href="#Detail-Skill" class="headerlink" title="Detail&amp;Skill"></a>Detail&amp;Skill</h3><p>我来自山西，在OUC当一名working hard的大三计算机学生，目前情绪稳定，前途渺茫。</p><p>目前学习过C,C++,C#,java,python,javascript,liquid，算法达到入门基础，有web(React框架)和小程序的前端开发经验。在IT工作室担任游戏部副部长，会使用unity引擎进行2D游戏的开发。</p><h3 id="Hobby"><a href="#Hobby" class="headerlink" title="Hobby"></a>Hobby</h3><p>游戏，动漫，骑车，跑步，乒乓球，健身，唱歌。总之是都沾点，比较喜欢尝试新鲜的东西。</p><h3 id="Achievement"><a href="#Achievement" class="headerlink" title="Achievement"></a>Achievement</h3><ul><li>2023年全国大学生数学建模比赛国家二等奖</li><li>2023年mathorcup数学建模比赛国家一等奖</li><li>2023年美国大学生数学建模比赛国家二等奖</li><li>2022年全国大学生数学建模比赛山东省二等奖</li><li>2023年亚太杯数学建模比赛S奖</li><li>2024年蓝桥杯PythonA组三等奖</li><li>CCF认证 200分</li><li>以第一责任人组织参与SRDP创新项目一项，已结项</li><li>合作完成独立游戏《大地之歌》</li><li>获得学校综合二，三等奖学金，“优秀学生”荣誉称号</li></ul><h3 id="Present-Work"><a href="#Present-Work" class="headerlink" title="Present Work"></a>Present Work</h3><p>Deep learning，Extraction of information</p><p>（learning）</p><h3 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h3><p>通过竞赛加分拿到推免资格 or 创新人才为校争光</p>]]></content>
       
       
       
